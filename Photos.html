@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos Page</title>
+  </head>
+  <body>
+
+      <body style="font-family:Verdana;">
+    <div style="background-color:#f1f1f1;padding:15px;">
+      <h1>JG Directed Photos</h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Home.html">Home</a>
+      <a href="Videos.html">Videos</a>
+      <a href="Photos.html">Photos</a>
+      <a href="Artists.html">Artists</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <h2>Will RM - Racks:</h2>
+    <div class="popup" onclick="myFunction()"><h5>Click me for more info! (click again to remove)<h5>
+      <span class="popuptext" id="myPopup">Shoot date: 24th - 30th November 2020, shots taken around Leicester.</span>
+    </div>
+
+    <div id="wrapper">
+         <div class="slideshow w3-container w3-half">
+             <div class="w3-content w3-display-container">
+                 <img class="mySlides fade" src="Image/Will1.JPG">
+                 <img class="mySlides fade" src="Image/Will2.JPG">
+                 <img class="mySlides fade" src="Image/Will3.JPG">
+                 <img class="mySlides fade" src="Image/Will4.JPG">
+                 <img class="mySlides fade" src="Image/Will5.JPG">
+                 <a class="prev" onclick="plusDivs(-1, 0)">&#10094;</a>
+                 <a class="next" onclick="plusDivs(1, 0)">&#10095;</a>
+             </div>
+             <br>
+             <div style="text-align:center">
+                 <span class="dot" onclick="currentDiv(1, 0)"></span>
+                 <span class="dot" onclick="currentDiv(2, 0)"></span>
+                 <span class="dot" onclick="currentDiv(3, 0)"></span>
+                 <span class="dot" onclick="currentDiv(4, 0)"></span>
+                 <span class="dot" onclick="currentDiv(5, 0)"></span>
+             </div>
+         </div>
+         <hr>
+         <h2>17dreams - Be Honest ft. 8liss:</h2>
+         <div class="popup2" onclick="myFunction2()"><h5>Click me for more info! (click again to remove)<h5>
+           <span class="popuptext2" id="myPopup2">Shoot date: 21st August 2020, shots taken around Peterborough (images not used in final project).</span>
+         </div>
+         <div class="slideshow w3-container w3-half">
+             <div class="w3-content w3-display-container">
+                 <img class="mySlides fade" src="Image/B&N1.JPG">
+                 <img class="mySlides fade" src="Image/B&N2.JPG">
+                 <img class="mySlides fade" src="Image/B&N3.JPG">
+                 <img class="mySlides fade" src="Image/B&N4.JPG">
+                 <a class="prev" onclick="plusDivs(-1, 1)">&#10094;</a>
+                 <a class="next" onclick="plusDivs(1, 1)">&#10095;</a>
+             </div>
+             <br>
+             <div style="text-align:center">
+                 <span class="dot" onclick="currentDiv(1, 1)"></span>
+                 <span class="dot" onclick="currentDiv(2, 1)"></span>
+                 <span class="dot" onclick="currentDiv(3, 1)"></span>
+                 <span class="dot" onclick="currentDiv(4, 1)"></span>
+             </div>
+         </div>
+         <hr>
+         <h2>17dreams - Alone:</h2>
+         <div class="popup3" onclick="myFunction3()"><h5>Click me for more info! (click again to remove)<h5>
+           <span class="popuptext3" id="myPopup3">Shoot date: 17th - 18th July 2020, shots taken at Eye Green Nature Reserve, Peterborough.</span>
+         </div>
+         <div class="slideshow w3-container w3-half">
+             <div class="w3-content w3-display-container">
+                 <img class="mySlides fade" src="Image/Brandon1.JPG">
+                 <img class="mySlides fade" src="Image/Brandon2.JPG">
+                 <img class="mySlides fade" src="Image/Brandon3.JPG">
+                 <img class="mySlides fade" src="Image/Brandon4.JPG">
+                 <a class="prev" onclick="plusDivs(-1, 2)">&#10094;</a>
+                 <a class="next" onclick="plusDivs(1, 2)">&#10095;</a>
+             </div>
+             <br>
+             <div style="text-align:center">
+                 <span class="dot" onclick="currentDiv(1, 2)"></span>
+                 <span class="dot" onclick="currentDiv(2, 2)"></span>
+                 <span class="dot" onclick="currentDiv(3, 2)"></span>
+                 <span class="dot" onclick="currentDiv(4, 2)"></span>
+             </div>
+         </div>
+         <hr>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </body>
+  <script src="JavaScript/Java.js" charset="utf-8"></script>
+</html>
