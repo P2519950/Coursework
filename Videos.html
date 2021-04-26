@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Page</title>
+  </head>
+  <body>
+    <body style="font-family:Verdana;">
+  <div style="background-color:#f1f1f1;padding:15px;">
+    <h1>JG Directed Videos</h1>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Home.html">Home</a>
+    <a href="Videos.html">Videos</a>
+    <a href="Photos.html">Photos</a>
+    <a href="Artists.html">Artists</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+  <div style="text-align:center">
+    <h3>Click on the boxes below:</h3>
+  </div>
+
+  <div class="row">
+    <div class="column" onclick="openTab('b1');" style="background:green;">
+      Will RM - Racks
+    </div>
+    <div class="column" onclick="openTab('b2');" style="background:blue;">
+      17dreams - Be Honest (ft. 8liss)
+    </div>
+    <div class="column" onclick="openTab('b3');" style="background:red;">
+      17dreams - Alone
+    </div>
+  </div>
+
+  <div id="b1" class="containerTab" style="display:none;background:green">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>Will RM - Racks (Official Music Video)</h2>
+    <video src="Video/Racks.mp4" autoplay poster="Image/TNRacks.jpg" style width="100%">
+
+    </video>
+  </div>
+
+  <div id="b2" class="containerTab" style="display:none;background:blue">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>17dreams - Be Honest ft.8liss (Offical Music Video)</h2>
+    <video src="Video/BeHonest.mp4" autoplay poster="Image/TNBeHonest.jpg"style width="100%">
+  </div>
+
+  <div id="b3" class="containerTab" style="display:none;background:red">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>17dreams - Alone (Official Music Video)</h2>
+    <video src="Video/Alone.mp4" autoplay poster="Image/TNAlone.png"style width="100%">
+  </div>
+
+
+  <h3>Are you an artist looking for a video?</h3>
+  <p>Complete the form below to request one!</p>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">Artist Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Artist name..">
+
+      <label for="lname">Where would you like it filmed?</label>
+      <input type="text" id="lname" name="lastname" placeholder="Location..">
+
+      <label for="country">Genre of Music</label>
+      <select id="country" name="country">
+        <option value="Pop">Pop</option>
+        <option value="rock">Rock</option>
+        <option value="rap">Rap</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </div>
+  </body>
+  <script src="JavaScript/Java.js" charset="utf-8"></script>
+</html>
