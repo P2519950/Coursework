@@ -2,15 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+<!--Link to style.css sheet-->
     <link rel="stylesheet" href="CSS/Style.css">
+<!--Viewport tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
   </head>
   <body>
-    <body style="font-family:Verdana;">
-  <div style="background-color:#f1f1f1;padding:15px;">
-    <h1>JG Directed Home</h1>
-  </div>
+<!--Header-->
+<div class="header">
+      <h1>JG Directed Home</h1>
+</div>
+<!--Header (END)-->
+  <br>
+<!--Side Nav-->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="Home.html">Home</a>
@@ -19,9 +24,46 @@
       <a href="Artists.html">Artists</a>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<!--Side Nav (END)-->
+<!--About-->
+<h1>Welcome to JG Directed!</h1>
+<p>JG Directed is an rising music video director who works with upcoming local artists to bring their music video dreams to life. With 3 videos out and many more on the way, this is a production company to keep your eye on!</p>
+<!--About (END)-->
+<!--Apply to join the production team-->
+<div class="apply">
+<h3> Want to join the ever-growing production team? </h3>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Full name..">
 
+    <label for="lname">What experience do you have within photography/ video production?</label>
+    <input type="text" id="lname" name="lastname" placeholder="Experience..">
+
+    <label for="lname">Contact email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Contact Email..">
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<!--Apply to join the production team (END)-->
+<!--Footer-->
+<div class="socials">
+<center>
+  <h2> Make sure to follow all our social medias to be updated when new videos are on the way!</h2>
+  <a href="https://instagram.com/jg_directed?igshid=pkx54s66lar3">
+  <img src="Image/Instalogo.png" alt="Instagram logo"width="30%"></a>
+  <a href="https://twitter.com/jg_directed?s=21">
+  <img src="Image/TwitterLogo.png" alt="Twitter logo" width="30%"></a>
+  <a href="https://youtube.com/channel/UCNR4QkIJVCAqomoJob5ZANQ">
+  <img src="Image/YoutubeLogo.png" alt="YouTube logo" width="30%"></a>
+</center>
+</div>
+<!--Footer (END)-->
+<!--Back to top button-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
+<!--Back to top button (END)-->
   </body>
+<!--Link to JavaScript-->
 <script src="JavaScript/Java.js" charset="utf-8"></script>
 </html>
