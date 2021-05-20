@@ -70,6 +70,7 @@ body {
 
 .sidenav a:hover {
   color: #f1f1f1;
+  font-size: 55px;
 }
 
 .sidenav .closebtn {
@@ -79,6 +80,40 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
+
+/******************************STACKED FORM******************************/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkorange;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/******************************STACKED FORM (END)******************************/
+
 /***Responsive NavBar***/
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -88,7 +123,22 @@ body {
 @media only screen and (min-width:1050px){
   .sidenav a {
     font-size: 25px;
+}
+.flexB{
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+}
+.flexB > div{
+  background-color: orange;
+  width: 50%;
+  margin:5px;
+  text-align: center;
+  font-size: 40px;
+}
+}
 /***Responsive NavBar(END)***/
+
 /******************************SIDE NAV (END)******************************/
 
 /******************************POPUP******************************/
@@ -237,6 +287,7 @@ box-sizing: border-box;
 body {
 margin: 0;
 font-family: Arial, Helvetica, sans-serif
+color: white;
 }
 
 .column {
@@ -272,52 +323,10 @@ cursor: pointer;
 }
 /******************************POPOUT BOXES (END)******************************/
 
-/******************************STACKED FORM******************************/
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
-input[type=submit] {
-  width: 100%;
-  background-color: black;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: darkorange;
-}
-
-div.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-/******************************STACKED FORM (END)******************************/
 
 /******************************FLEX BOXES******************************/
-.flexB{
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: black;
-}
-.flexB > div{
-  background-color: orange;
-  width: 50%;
-  margin:5px;
-  text-align: center;
-  font-size: 40px;
-}
+
 
 .flex {
   display: flex;
@@ -368,11 +377,15 @@ div.container {
 }
 
 @media screen and (max-width: 1024px) {
-  .allslides{
-    visibility: hidden;
+  .flex{
+    display: none;
   }
 }
-
+@media screen and (min-width: 1023px) {
+  .allSlides{
+    display: none;
+  }
+}
 
 
 * {box-sizing:border-box}
@@ -402,6 +415,10 @@ body {font-family: Verdana,sans-serif;margin:0}
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
   }
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
