@@ -1,0 +1,478 @@
+/******************************GENERAL******************************/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  padding: 0;
+}
+
+.header{
+  background-color: white;
+  padding: 10px;
+}
+
+/******************************GENERAL (END)******************************/
+
+/******************************HOME PAGE******************************/
+.socials{
+  width: 100%;
+  font-size: 15px;
+}
+/******************************HOME PAGE (END)******************************/
+
+/******************************BACK TO TOP******************************/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+/***Adds an effect which is activated when the cursor is held over the button***/
+#myBtn:hover {
+  background-color: #555;
+}
+/******************************BACK TO TOP (END)******************************/
+
+/******************************SIDE NAV******************************/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  position: fixed;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  font-size: 55px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/******************************STACKED FORM******************************/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkorange;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/******************************STACKED FORM (END)******************************/
+
+/***Responsive NavBar***/
+/***Inspects the users screen size and only displays a certain section of code depending on the pixels***/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (min-width:1050px){
+  .sidenav a {
+    font-size: 25px;
+}
+.flexB{
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+}
+.flexB > div{
+  background-color: orange;
+  width: 50%;
+  margin:5px;
+  text-align: center;
+  font-size: 40px;
+}
+}
+/***Responsive NavBar(END)***/
+
+/******************************SIDE NAV (END)******************************/
+
+/******************************POPUP******************************/
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/***multiple popup divs had to be created with the same code utilised to allow 3 different messages to show***/
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup2 .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup2 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popup3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup3 .popuptext3 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup3 .popuptext3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup3 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+/******************************POPUP (END)******************************/
+
+/******************************POPOUT BOXES******************************/
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif
+color: white;
+}
+
+.column {
+float: left;
+width: 32.75%;
+text-align: center;
+font-size: 25px;
+cursor: pointer;
+color: white;
+min-height: 100px;
+margin:1px;
+}
+
+.containerTab {
+padding: 20px;
+color: white;
+width:100%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+width: 100%;
+color: white;
+}
+
+.closebtn {
+float: right;
+color: white;
+font-size: 35px;
+cursor: pointer;
+}
+/******************************POPOUT BOXES (END)******************************/
+
+
+
+/******************************FLEX BOXES******************************/
+
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+}
+
+.flex > div {
+  background-color: orange;
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+}
+
+/******************************FLEX BOXES(END)******************************/
+
+/******************************SLIDESHOW******************************/
+
+.allSlides{
+  width: 100%;
+}
+.mySlides-fade{
+  display: left;
+}
+.info{
+  width: 100%;
+}
+.info h2{
+  padding-left: 30px 30px 20px;
+  font-family: sans-serif;
+  color: black;
+  line-height: 44px;
+}
+.info p{
+  padding-left: 0px 30px 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  line-height: 24px;
+}
+.wrapper{
+  width: 100%;
+}
+.wrapper img{
+  width:100%;
+}
+/***Hides the desktop screen layout from mobile viewers by monitoring the screen size and applying the assigned rule if the criteria are met***/
+@media screen and (max-width: 1024px) {
+  .flex{
+    display: none;
+  }
+}
+/***Hides the mobile screen layout from desktop viewers by monitoring the screen size and applying the assigned rule if the criteria are met***/
+@media screen and (min-width: 1023px) {
+  .allSlides{
+    display: none;
+  }
+}
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none; width: 100%;}
+  .slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+.slideshow img{
+  width: 100%;
+}
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #f44336;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  @media screen and
+/******************************SLIDESHOW (END)******************************/

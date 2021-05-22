@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!--Link to style.css sheet-->
+    <link rel="stylesheet" href="CSS/Style.css">
+<!--Viewport tag-->
+  <!--sets screen size to be responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+<!--Header-->
+    <div class="header">
+      <h1>JG Directed Photos</h1>
+    </div>
+<!--Header (END)-->
+    <br>
+<!--SideNav-->
+    <div id="mySidenav" class="sidenav">
+        <!--a href places content in a list-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Home.html">Home</a>
+      <a href="Videos.html">Videos</a>
+      <a href="Photos.html">Photos</a>
+      <a href="Artists.html">Artists</a>
+    </div>
+        <!--custom style effect for navbar-->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<!--SideNav (END)-->
+
+<br>
+<br>
+
+<!--Slideshows for smaller screens-->
+  <!--allSlides groups the entire section to be made visible or invisible depending on the screen size, done in style.css-->
+<div class="allSlides">
+  <div class="info">
+    <div class="popup">
+    <h2>Will RM - Racks:</h2>
+      <!--onclick="myFunciton()" allows the javascript to add a function to it by linking through the assigned name-->
+    <div class="popup" onclick="myFunction()"><h5>Click me for more info! (click again to remove)<h5>
+      <span class="popuptext" id="myPopup">Shoot date: 24th - 30th November 2020, shots taken around Leicester.</span>
+    </div>
+  </div>
+</div>
+
+<div class="slidess">
+    <div id="wrapper">
+         <div class="slideshow w3-container w3-half">
+             <div class="w3-content w3-display-container">
+                 <img class="mySlides fade" src="Image/Will1.JPG">
+                 <img class="mySlides fade" src="Image/Will2.JPG">
+                 <img class="mySlides fade" src="Image/Will3.JPG">
+                 <img class="mySlides fade" src="Image/Will4.JPG">
+                 <img class="mySlides fade" src="Image/Will5.JPG">
+<!--each slideshow has the 2 below lines, within the brackets the first digit relates to the slideshows position, forward 1 or previous 1, the 2nd digit links the prev and next buttons to the correct slideshows so only the one desired to operate.-->
+                 <a class="prev" onclick="plusDivs(-1, 0)">&#10094;</a>
+                 <a class="next" onclick="plusDivs(1, 0)">&#10095;</a>
+             </div>
+             <br>
+             <div style="text-align:center">
+<!--below the digits within the bracket represent the image relabled 1 to 5, this is the what the "plusDivs" -1 and +1 corelates to, moving the slideshow up or down the list, the 2nd digit links the prev and next buttons to this particular list, this is vital when using multiple slideshows-->
+                 <span class="dot" onclick="currentDiv(1, 0)"></span>
+                 <span class="dot" onclick="currentDiv(2, 0)"></span>
+                 <span class="dot" onclick="currentDiv(3, 0)"></span>
+                 <span class="dot" onclick="currentDiv(4, 0)"></span>
+                 <span class="dot" onclick="currentDiv(5, 0)"></span>
+           </div>
+       </div>
+   </div>
+</div>
+<div class="info">
+           <h2>17dreams - Be Honest ft. 8liss:</h2>
+   <div class="popup2" onclick="myFunction2()"><h5>Click me for more info! (click again to remove)<h5>
+             <span class="popuptext2" id="myPopup2">Shoot date: 21st August 2020, shots taken around Peterborough (images not used in final project).</span>
+   </div>
+</div>
+
+<div class="slidess">
+  <div id="wrapper">
+     <div class="slideshow w3-container w3-half">
+             <div class="w3-content w3-display-container">
+                 <img class="mySlides fade" src="Image/B&N1.JPG">
+                 <img class="mySlides fade" src="Image/B&N2.JPG">
+                 <img class="mySlides fade" src="Image/B&N3.JPG">
+                 <img class="mySlides fade" src="Image/B&N4.JPG">
+<!--here the first digit remains the same to provide the same function however, the 2nd digit is now "1" to allow it to link with the 2nd set of images-->
+                 <a class="prev" onclick="plusDivs(-1, 1)">&#10094;</a>
+                 <a class="next" onclick="plusDivs(1, 1)">&#10095;</a>
+             </div>
+             <br>
+       <div style="text-align:center">
+<!--2nd set of images labelled 1 to 4 and assigned the 1 value to link to the prev and next buttons overlaying the images, the same rule applies for all 6 slideshows-->
+                 <span class="dot" onclick="currentDiv(1, 1)"></span>
+                 <span class="dot" onclick="currentDiv(2, 1)"></span>
+                 <span class="dot" onclick="currentDiv(3, 1)"></span>
+                 <span class="dot" onclick="currentDiv(4, 1)"></span>
+       </div>
+     </div>
+  </div>
+</div>
+<div class="info">
+         <h2>17dreams - Alone:</h2>
+  <div class="popup3" onclick="myFunction3()"><h5>Click me for more info! (click again to remove)<h5>
+           <span class="popuptext3" id="myPopup3">Shoot date: 17th - 18th July 2020, shots taken at Eye Green Nature Reserve, Peterborough.</span>
+  </div>
+</div>
+
+<div class="slidess">
+ <div id="wrapper">
+   <div class="slideshow w3-container w3-half">
+             <div class="w3-content w3-display-container">
+                 <img class="mySlides fade" src="Image/Brandon1.JPG">
+                 <img class="mySlides fade" src="Image/Brandon2.JPG">
+                 <img class="mySlides fade" src="Image/Brandon3.JPG">
+                 <img class="mySlides fade" src="Image/Brandon4.JPG">
+                 <a class="prev" onclick="plusDivs(-1, 2)">&#10094;</a>
+                 <a class="next" onclick="plusDivs(1, 2)">&#10095;</a>
+             </div>
+             <br>
+             <div style="text-align:center">
+                 <span class="dot" onclick="currentDiv(1, 2)"></span>
+                 <span class="dot" onclick="currentDiv(2, 2)"></span>
+                 <span class="dot" onclick="currentDiv(3, 2)"></span>
+                 <span class="dot" onclick="currentDiv(4, 2)"></span>
+   </div>
+  </div>
+ </div>
+</div>
+</div>
+
+<!--Slideshows for smaller screens (END)-->
+<!--Flex Box for larger screens-->
+  <!--Flex groups the entire section to be made visible or invisible depending on the screen size, done in style.css-->
+<div class="flex">
+  <!--flex box was utilised here due to its ability to adjust and depdning on the screensize while also providing a simple to easy to use format-->
+  <div><h2>Will RM - Racks:</h2>
+    <p>Shoot date: 24th - 30th November 2020, shots taken around Leicester.</p></div>
+    <div id="wrapper">
+         <div class="slideshow w3-container w3-half">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides fade" src="Image/Will1.JPG">
+        <img class="mySlides fade" src="Image/Will2.JPG">
+        <img class="mySlides fade" src="Image/Will3.JPG">
+        <img class="mySlides fade" src="Image/Will4.JPG">
+        <img class="mySlides fade" src="Image/Will5.JPG">
+        <a class="prev" onclick="plusDivs(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusDivs(1, 3)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentDiv(1, 3)"></span>
+        <span class="dot" onclick="currentDiv(2, 3)"></span>
+        <span class="dot" onclick="currentDiv(3, 3)"></span>
+        <span class="dot" onclick="currentDiv(4, 3)"></span>
+        <span class="dot" onclick="currentDiv(5, 3)"></span>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="flex">
+  <div><h2>17dreams - Be Honest ft. 8liss:</h2>
+    <!--the text which is hidden within the popups on mobile are visible all the time on larger screens as it doesn't overcrowd the screen-->
+    <p>Shoot date: 21st August 2020, shots taken around Peterborough (images not used in final project).</p></div>
+    <div id="wrapper">
+         <div class="slideshow w3-container w3-half">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides fade" src="Image/B&N1.JPG">
+        <img class="mySlides fade" src="Image/B&N2.JPG">
+        <img class="mySlides fade" src="Image/B&N3.JPG">
+        <img class="mySlides fade" src="Image/B&N4.JPG">
+        <a class="prev" onclick="plusDivs(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusDivs(1, 4)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentDiv(1, 4)"></span>
+        <span class="dot" onclick="currentDiv(2, 4)"></span>
+        <span class="dot" onclick="currentDiv(3, 4)"></span>
+        <span class="dot" onclick="currentDiv(4, 4)"></span>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="flex">
+  <div><h2>17dreams - Alone:</h2>
+    <p>Shoot date: 17th - 18th July 2020, shots taken at Eye Green Nature Reserve, Peterborough.</p></div>
+    <div id="wrapper">
+         <div class="slideshow w3-container w3-half">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides fade" src="Image/Brandon1.JPG">
+        <img class="mySlides fade" src="Image/Brandon2.JPG">
+        <img class="mySlides fade" src="Image/Brandon3.JPG">
+        <img class="mySlides fade" src="Image/Brandon4.JPG">
+        <a class="prev" onclick="plusDivs(-1, 5)">&#10094;</a>
+        <a class="next" onclick="plusDivs(1, 5)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+<!--it is vital to have the slideshows in order 0 to 5/ onwards as otherwise the prev and next buttons won't link correctly, this was an issue which was overcome in the prodcess of producing this website-->
+        <span class="dot" onclick="currentDiv(1, 5)"></span>
+        <span class="dot" onclick="currentDiv(2, 5)"></span>
+        <span class="dot" onclick="currentDiv(3, 5)"></span>
+        <span class="dot" onclick="currentDiv(4, 5)"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Flex box for larger screens(END)-->
+<h2> Make sure to follow all our social medias to be updated when new videos are on the way!</h2>
+<!--Footer-->
+<div class="socials">
+<center>
+    <!--links to social media links which are displayed as an image-->
+  <a href="https://instagram.com/jg_directed?igshid=pkx54s66lar3">
+  <img src="Image/Instalogo.png" alt="Instagram logo"width="30%"></a>
+  <a href="https://twitter.com/jg_directed?s=21">
+  <img src="Image/TwitterLogo.png" alt="Twitter logo" width="30%"></a>
+  <a href="https://youtube.com/channel/UCNR4QkIJVCAqomoJob5ZANQ">
+  <img src="Image/YoutubeLogo.png" alt="YouTube logo" width="30%"></a>
+</center>
+</div>
+<!--Footer (END)-->
+<!--Back to top button-->
+    <!--giving the button an id allows it to have javascript applied to it-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--Back to top button (END)-->
+  </body>
+<!--Link to JavaScript-->
+  <script src="JavaScript/Java.js" charset="utf-8"></script>
+</html>

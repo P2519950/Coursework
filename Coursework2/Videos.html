@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!--Link to style.css sheet-->
+    <link rel="stylesheet" href="CSS/Style.css">
+<!--Viewport tag-->
+  <!--sets screen size to be responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>JG Directed Videos</h1>
+    </div>
+<!--Header (END)-->
+  <br>
+<!--SideNav-->
+  <div id="mySidenav" class="sidenav">
+      <!--a href places content in a list-->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Home.html">Home</a>
+    <a href="Videos.html">Videos</a>
+    <a href="Photos.html">Photos</a>
+    <a href="Artists.html">Artists</a>
+  </div>
+      <!--custom style effect for navbar-->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<!--SideNav (END)-->
+<!--Pop Out Boxes-->
+  <div style="text-align:center">
+    <h3>Click on the song titles below:</h3>
+  </div>
+<center>
+    <!--row groups all 3 options into 1 div-->
+  <div class="row">
+      <!--sets individual option 1-->
+    <div class="column" onclick="openTab('b1');" style="background:black;">
+      Will RM - Racks
+    </div>
+      <!--sets individual option 2-->
+    <div class="column" onclick="openTab('b2');" style="background:black;">
+      17dreams - Be Honest (ft. 8liss)
+    </div>
+      <!--sets individual option 3-->
+    <div class="column" onclick="openTab('b3');"
+   style="background:black;">
+      17dreams - Alone
+    </div>
+  </div>
+      <!--closes the div for the row-->
+</center>
+  <div id="b1" class="containerTab" style="display:none;background:black">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>Will RM - Racks (Official Music Video)</h2>
+    <video width="95%" controls>
+        <!--two different types of video format to suit a wider range of browsers-->
+      <source src="Video/Racks.mp4"type="video/mp4">
+        <source src="Video/Racks.mov"type="video/mov">
+          <!--a message which will be shown if neither video formats are compatable with the browser-->
+          Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div id="b2" class="containerTab" style="display:none;background:black">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h2>17dreams - Be Honest (Official Music Video)</h2>
+      <video width="95%" controls>
+        <source src="Video/BeHonest.mp4" type="video/mp4">
+          <source src="Video/BeHonest.mov" type="video/mov">
+            Your browser does not support the video tag.
+          </video>
+  </div>
+
+  <div id="b3" class="containerTab" style="display:none;background:black">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>17dreams - Alone (Official Music Video)</h2>
+    <video width="95%" controls>
+      <source src="Video/Alone.mp4"type="video/mp4">
+      <source src"Video/Alone.mov" type="video/mov">
+        Your browser does not support the video element.
+      </video>
+  </div>
+<!--Pop Out Boxes (END)-->
+<h3>More videos on the way soon!</h3>
+  <h3>Are you an artist looking for a video?</h3>
+  <h3>Complete the form below to request one!</h3>
+<!--Apply for a video form-->
+  <div class="container">
+    <!--unlinked PHP causing error-->
+    <form action="/action_page.php">
+      <label for="fname">Artist Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Artist name..">
+
+      <label for="lname">Where would you like it filmed?</label>
+      <input type="text" id="lname" name="lastname" placeholder="Location..">
+
+
+      <label for="country">Genre of Music</label>
+      <select id="country" name="country">
+        <option value="Pop">Pop</option>
+        <option value="rock">Rock</option>
+        <option value="rap">Rap</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+<!--Apply for a video form (END)-->
+<!--Footer-->
+    <h2> Make sure to follow all our social medias to be updated when new videos are on the way!</h2>
+    <div class="socials">
+    <center>
+      <!--links to social media links which are displayed as an image-->
+      <a href="https://instagram.com/jg_directed?igshid=pkx54s66lar3">
+      <img src="Image/Instalogo.png" alt="Instagram logo"width="30%"></a>
+      <a href="https://twitter.com/jg_directed?s=21">
+      <img src="Image/TwitterLogo.png" alt="Twitter logo" width="30%"></a>
+      <a href="https://youtube.com/channel/UCNR4QkIJVCAqomoJob5ZANQ">
+      <img src="Image/YoutubeLogo.png" alt="YouTube logo" width="30%"></a>
+    </center>
+    </div>
+<!--Footer (END)-->
+<!--Back to top button-->
+    <!--giving the button an id allows it to have javascript applied to it-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--Back to top button (END)-->
+  </body>
+<!--Link to JavaScript-->
+  <script src="JavaScript/Java.js" charset="utf-8"></script>
+</html>
